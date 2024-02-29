@@ -4,9 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favorite Song Showcase</title>
+    <style>
+      #songInfo{
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
+    <main>
+      <div >
+        <form id="formSong" onsubmit="event.preventDefault(); displaySongInfo()" >
+          <label for="nameSong"><pre>Name favorite song:</pre></label>
+          <input type="text" name="text" id="nameSong" placeholder="One Upon a December" required>
+          <label for="songLink"><pre>The link of the song you like to share it </pre></label>
+          <input type="text" name="text" id="songLink"  placeholder="https://example.com" size="30" required>
+          <label for="date"> <pre>The first time you heard the song</pre></label>
+          <input type="number" name="date" id="date" required>
+          <label for="description"><pre>Why it's your favorite:</pre></label>
+          <textarea name="description" id="description" cols="25" rows="6" placeholder="Reminde me of a beautiful time." required></textarea>
+          <pre><button type="submit" > Submit</button></pre>
+        </form>
+      </div>
+      <div id="songInfo">
+
+      </div>
+      
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
+
