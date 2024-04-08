@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&family=Merienda:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Merienda", cursive;
+}
+h1{
+    font-size: 50px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 1px rgb(107, 69, 196);
+    margin-left: 500px;
+    padding: 70px;
+}
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2020/03/14/05/18/happy-birthday-4929674_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#songInfo{
+    display: flex;
+    justify-content:center;
+    margin-left: 600px;
+}
+.form-song{
+    display: flex;
+    justify-content:center;
+    padding-left: 230px;
+}
+
+form {
+    border-radius: 20px;
+}
+p {
+    color: rgb(72, 56, 116);
+    font-weight: 900;
+    margin: 10px 0; 
+}
+input,textarea {
+    background: transparent;
+    padding: 5px 15px;
+    margin-left: 150px;
+    border-radius: 20px;
+}
+button{
+    background: transparent;
+    padding: 5px 18px;
+    position: relative;
+    left: 200px;
+    border-radius: 20px;
+    
+}

@@ -10,7 +10,7 @@ const youtubeEmbedLink = songLink.replace('watch?v=', 'embed/').replace('https:/
 document.getElementById("songInfo").style.display="block";
 
 document.getElementById("songInfo").innerHTML = `
-name :  ${nameSong}  <br> date: ${date} <br> description: ${description} <br>
+name :  ${nameSong}  <br><br> date: ${date} <br><br> description: ${description} <br><br>
 <iframe width="560" height="315" src="${youtubeEmbedLink}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 `;
 
@@ -18,6 +18,6 @@ formSong.style.display="none";
 
 }
 
-// module.exports = {
-//     displaySongInfo: displaySongInfo,
-// };ٍٍ
+module.exports = {
+    displaySongInfo: displaySongInfo,
+};
