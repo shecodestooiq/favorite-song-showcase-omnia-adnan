@@ -4,9 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favorite Song Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      #songInfo{
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
+    <main>
+      <h1>Tell us Your Favorite Song</h1>
+      <div class="form-song">
+        <form id="formSong" onsubmit="event.preventDefault(); displaySongInfo()" >
+          <label for="nameSong"><p>Name favorite song:</p></label>
+          <input type="text" name="text" id="nameSong" placeholder="One Upon a December" required>
+          <label for="songLink"><p>The link of the song you like to share it </p></label>
+          <input type="text" name="text" id="songLink"  placeholder="https://example.com" size="30" required>
+          <label for="date"> <p>The first time you heard the song</p></label>
+          <input type="date" name="date" id="date" required>
+          <label for="description"><p>Why it's your favorite:</p></label>
+          <textarea name="description" id="description" cols="25" rows="6" placeholder="Reminde me of a beautiful time." required></textarea>
+          <button type="submit"> Submit </button>
+        </form>
+      <!-- <img src="https://cdn.pixabay.com/photo/2016/03/13/22/02/retro-1254595_1280.png" alt="keytar" width="350" height="500">  -->
+      </div>
+      <div id="songInfo">
+
+      </div>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
+
